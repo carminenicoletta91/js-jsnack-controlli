@@ -11,7 +11,7 @@ var j = 0;
 for ( var i = 1; i <= 6; i++ ){
   inserisci = parseInt( prompt( "Inserisci il N." + i ))
   // setto condizione per far inserire solo numeri all'utente
-  if  (inserisci / inserisci != 1){
+  if  (inserisci / inserisci != 1 && inserisci != 0){
     alert("!!!!!--Ti ho detto di inserire un numero--!!!!!")
     i--;
 
