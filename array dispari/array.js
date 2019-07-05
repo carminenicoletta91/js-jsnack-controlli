@@ -10,13 +10,18 @@ var j = 0;
 // ciclo per far inserire i numeri all'utente
 for ( var i = 1; i <= 6; i++ ){
   inserisci = parseInt( prompt( "Inserisci il N." + i ))
-  console.log( inserisci );
+  // setto condizione per far inserire solo numeri all'utente
+  if  (inserisci / inserisci != 1){
+    alert("!!!!!--Ti ho detto di inserire un numero--!!!!!")
+    i--;
+
+  }
   // condizione di inserimento nell'array
-  if( inserisci % 2 != 0 ){
+  else if( inserisci % 2 != 0 ){
     arrayNumeriDispari[j] = inserisci;
     j++;
   }
-
+  console.log(inserisci);
 }
   console.log( "j vale=" + j );
 console.log( arrayNumeriDispari )
