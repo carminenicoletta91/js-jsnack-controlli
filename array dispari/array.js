@@ -6,17 +6,17 @@ nell’array*/
 var arrayNumeriDispari = [];
 // creo variabile contenente i numeri inseriti da utente
 var inserisci;
-var j=0;
+var j = 0;
 // ciclo per far inserire i numeri all'utente
-for (var i = 1 ; i <= 6; i++){
-  inserisci =parseInt(prompt("Inserisci il N." + i))
-  console.log(inserisci);
+for ( var i = 1; i <= 6; i++ ){
+  inserisci = parseInt( prompt( "Inserisci il N." + i ))
+  console.log( inserisci );
   // condizione di inserimento nell'array
-  if(inserisci % 2 !=0){
-    arrayNumeriDispari[j]= inserisci;
+  if( inserisci % 2 != 0 ){
+    arrayNumeriDispari[j] = inserisci;
     j++;
   }
 
 }
-  console.log("j vale=" + j);
-console.log(arrayNumeriDispari)
+  console.log( "j vale=" + j );
+console.log( arrayNumeriDispari )
